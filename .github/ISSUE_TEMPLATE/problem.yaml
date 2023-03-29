@@ -1,0 +1,47 @@
+name: Problem with aleph-node
+description: Let us know about an issue you experienced with aleph-node
+body:
+  - type: checkboxes
+    attributes:
+      label: Did you read the documentation and guides?
+      description: Please visit https://docs.alephzero.org/aleph-zero/validate, https://github.com/Cardinal-Cryptography/aleph-node and https://github.com/Cardinal-Cryptography/aleph-node-runner -- there might be an answer to your question already.
+      options:
+        - label: I have inspected the documentation.
+          required: true
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue?
+      description: Please search to see if a related issue already exists and leave a comment that explains your case.
+      options:
+        - label: I have searched the existing issues.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Description of the problem
+      # description: What is the problem?
+      # placeholder: Describe the problem in as much detail as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: Information on your setup.
+      description: Required details 1) network - testnet, mainnet? 2) Version of aleph-node, 3) How do you run aleph-node - directly, docker, aleph-node-runner, 3) Is it a validator node or RPC-node?, 4) what flags do you run the binary with?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide the steps that led to the discovery of the issue.
+      # placeholder: Describe what you were doing so we can reproduce the problem.
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Did you attach relevant logs?
+      description: It is absolutely crucial that you upload logs from aleph-node that can help us diagnosing your issue. Ideally starting ~1hour before you encountered an issue, and extending for a period of around 12 hours. Note that without suitable logs you risk your issue to be closed or ignored.
+      options:
+        - label: I have attached logs or logs are irrelevant.
+          required: true
