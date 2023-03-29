@@ -27,7 +27,7 @@ body:
     id: info
     attributes:
       label: Information on your setup.
-      description: Required details 1) network - testnet, mainnet? 2) Version of aleph-node, 3) How do you run aleph-node - directly, docker, aleph-node-runner, 3) Is it a validator node or RPC-node?, 4) what flags do you run the binary with?
+      description: Required details 1) Running on testnet or mainnet? 2) Version of aleph-node, 3) How do you run aleph-node - directly, docker, aleph-node-runner? 3) Is it a validator node or RPC-node?, 4) what flags do you run aleph-node with?
     validations:
       required: true
   - type: textarea
@@ -43,5 +43,5 @@ body:
       label: Did you attach relevant logs?
       description: It is absolutely crucial that you upload logs from aleph-node that can help us diagnosing your issue. Ideally starting ~1hour before you encountered an issue, and extending for a period of around 12 hours. Note that without suitable logs you risk your issue to be closed or ignored.
       options:
-        - label: I have attached logs or logs are irrelevant.
+        - label: I have attached logs (if relevant).
           required: true
