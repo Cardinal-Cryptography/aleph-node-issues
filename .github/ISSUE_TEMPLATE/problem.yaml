@@ -27,7 +27,7 @@ body:
     id: info
     attributes:
       label: Information on your setup.
-      description: Required details 1) Running on testnet or mainnet? 2) Version of aleph-node, 3) How do you run aleph-node - directly, docker, aleph-node-runner? 3) Is it a validator node or RPC-node?, 4) what flags do you run aleph-node with? 5) operating system.
+      description: Required details 1) Running on testnet or mainnet? 2) Version of aleph-node, 3) How do you run aleph-node - directly, docker, aleph-node-runner? 3) Is it a validator node or RPC-node?, 4) what flags do you run aleph-node with? 5) operating system, 6) hardware.
     validations:
       required: true
   - type: textarea
